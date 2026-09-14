@@ -98,12 +98,19 @@ View Booking Records
 
 Project Structure
 Plaintext
-car_rental/
-├── config.php      # Database connection configuration
-├── index.php       # Main booking interface
-├── save.php        # Form processing logic
-├── view.php        # Booking records view panel
-├── style.css       # Application styling
-├── database.sql    # Database schema file
-└── README.md       # Project documentation
+car_rental
+Database connection configuration
+-config.php  
+Main booking interface
+-index.php       
+Form processing logic
+-save.php  
+Booking records view panel
+-view.php        
+Application styling
+-style.css       
+Database schema file
+-database.sql    
+Project documentation
+-README.md       
 
