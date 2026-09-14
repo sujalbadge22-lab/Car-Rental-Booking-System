@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS car_rental_db;
+USE car_rental_db;
+
+CREATE TABLE IF NOT EXISTS bookings (
+    booking_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    car_model VARCHAR(50) NOT NULL,
+    pickup_date DATE NOT NULL,
+    return_date DATE NOT NULL,
+    status VARCHAR(30) NOT NULL DEFAULT 'Confirmed',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO bookings (customer_name, email, phone, car_model, pickup_date, return_date, status) 
+VALUES 
+('Aarav Mehta', 'aarav@example.com', '9876543210', 'Sedan (Honda City)', '2026-09-20', '2026-09-25', 'Confirmed'),
+('Ananya Roy', 'ananya@example.com', '9876543211', 'SUV (Mahindra Thar)', '2026-09-18', '2026-09-22', 'In Use'),
+('Rohan Verma', 'rohan@example.com', '9876543212', 'Hatchback (Swift)', '2026-09-10', '2026-09-12', 'Completed');
+
